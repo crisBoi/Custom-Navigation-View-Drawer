@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/staff"
+        android:title="Staff"
+        android:icon="@drawable/ic_nav_staff"
+        />
+    <item android:id="@+id/class_n_division"
+        android:title="Class and Divisions"
+        android:icon="@drawable/ic_nav_class"
+        />
+    <item android:id="@+id/students"
+        android:title="Students"
+        android:icon="@drawable/ic_nav_students"
+        />
+    <item android:id="@+id/leaves"
+        android:title="Leave"
+        android:icon="@drawable/ic_nav_leaves"
+        />
+    <item android:id="@+id/payments"
+        android:title="Payment"
+        android:icon="@drawable/ic_nav_payments"
+        />
+    <item android:id="@+id/exam_n_result"
+        android:title="Exams and Results"
+        android:icon="@drawable/ic_nav_exams"
+        />
+    <item android:id="@+id/trasnport"
+        android:title="Transport"
+        android:icon="@drawable/ic_nav_trasnport"
+        />
+    <item android:id="@+id/time_table"
+        android:title="Time Table"
+        android:icon="@drawable/ic_nav_timetable"
+        />
+</menu>
