@@ -4,7 +4,8 @@
 
     <item android:id="@+id/staff"
         android:title="Staff"
-        android:icon="@drawable/ic_nav_staff"
+
+        android:actionLayout="@layout/custom_toolbar"
         />
     <item android:id="@+id/class_n_division"
         android:title="Class and Divisions"

@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        navigationView = findViewById(R.id.nav_view)
         drawerLayout = findViewById(R.id.drawer_layout)
         actionDrawerToogle = ActionBarDrawerToggle(this, drawerLayout, R.string.Open, R.string.Close)
 
@@ -30,10 +31,21 @@ class MainActivity : AppCompatActivity() {
         drawerLayout.addDrawerListener(actionDrawerToogle)
         actionDrawerToogle.syncState()
 
+//        nav_view.inflateMenu(R.layout.custom_toolbar)
 
 
+        navigationView.setNavigationItemSelectedListener {
+            Toast.makeText(this, "hello", Toast.LENGTH_LONG).show()
+            true
+        }
+
+        nav_view.setOnClickListener {
+            Toast.makeText(this, "hello", Toast.LENGTH_LONG).show()
+        }
 //        setSupportActionBar(my_toolbar)
-
+        cool.setOnClickListener {
+            Toast.makeText(this, "hello", Toast.LENGTH_LONG).show()
+        }
 
         val actionBar = supportActionBar
 
@@ -49,22 +61,19 @@ class MainActivity : AppCompatActivity() {
        /* bell_iv.setOnClickListener {
             Toast.makeText(this, "Hello", Toast.LENGTH_LONG).show()
         }*/
+
+
+//        drawerLayout.addView(view)
     }
+
+
+
 /*
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.nav_menu, menu)
         return true
     }*/
 
-/*
-    override fun onOptionsItemSelected(item: MenuItem) =  when(item.itemId) {
-        R.id.notification -> {
-            true
-        }
 
-        else -> {
-            super.onOptionsItemSelected(item)
-        }
-    }
-*/
+
 }
